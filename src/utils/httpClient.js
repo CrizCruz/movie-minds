@@ -1,4 +1,5 @@
-const API = "https://api.themoviedb.org/3"
+const API = process.env.REACT_APP_API
+const API_TOKEN = process.env.REACT_APP_API_TOKEN
 
 export function get(path){
     
@@ -7,7 +8,7 @@ export function get(path){
         headers: {
           accept: "application/json",
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiMWRlNmVlYTg2ZWU1MmYzZjA1YTA3NWU3ZTYzYmM1NSIsInN1YiI6IjY1NjY3M2I3YThiMmNhMDBlYTg4YmRiOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ._pkpjk_rBkLVvcbGu9xwqCu7AyhtMgYmrv0nF5rB7ZE",
+            "Bearer " + API_TOKEN,
         },
       };
   
