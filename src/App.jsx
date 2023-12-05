@@ -2,7 +2,7 @@ import { LandingPage } from "./pages/LandingPage";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import { MovieDetails } from "./pages/MovieDetails";
 import style from "./App.module.css";
-import { Search } from "./components/Search";
+
 
 export function App() {
   return (
